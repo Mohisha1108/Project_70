@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    background-color: #c7c7c7;
+}
+
+#contact iframe {
+    width: 100%;
+}
+
+.contact_1 h5 {
+    display: inline;
+}
+
+.contact_1 a {
+    text-shadow: none;
+}
+
+
+.announcement iframe {
+    width: 80%;
+}
+
+
+input {
+    background: green;
+}
+
+#myNavbar {
+    list-style: none;
+    font-family: sans-serif;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    z-index: 10;
+    cursor: pointer;
+}
+#campus_life{
+  font-variant: small-caps;  
+}
+.environment_li {
+    margin: 13px;
+}
+
+.environment_li h4 {
+    border-bottom: 1px solid white;
+    padding: 8px;
+}
+
+.environment_li img {
+    border-radius: 25px;
+}
+
+environment_li p {
+    margin-top: 10px;
+}
+h4{
+    font-variant: small-caps;
+    font-size: 20px;
+}
