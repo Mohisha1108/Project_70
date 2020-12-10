@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <title>School Website</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
-<link rel="stylesheet" href="style.css">
 
 <body>
     <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
@@ -16,36 +29,81 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand" href="#podar">Podar International School</a>
         </div>
         <div class="collapse navbar-collapse" id="#myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href=".announcement">Podar International School</a></li>
-                <li><a href="#videos">Campus Life</a></li>
-                <li><a href="#writings">Achivements</a></li>
-                <li><a href="#work">What's New</a></li>
-                <li><a href="#aboutMe">Locations</a></li>
-                <li><a href="#details">Contact us</a></li>
+                <li><a href="#marqueeStyle">Home</a></li>
+                <li><a href="#campus_life" >Campus Life</a></li>
+                <li><a href="#achivements" >Achievements</a></li>
+                <li><a href="#whatsnew">What's New</a></li>
+                <li><a href="#map">Location</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
             </ul>
         </div>
     </nav>
-    b <div class="announcement">
-        <marquee id="marqueeStyle" onmouseover="this.stop();" onmouseout="this.start();">*** Feel free to ask queries on http://www.podareducation.org/school/ahmednagar ***</marquee>
+    <div class="announcement">
+        <marquee id="marqueeStyle" onmouseover="this.stop();" onmouseout="this.start();">*** Feel free to ask queries on principal.ahmednagar@podar.org ***</marquee>
     </div>
-    <iframe width="601" height="338" src="https://www.youtube.com/embed/OTUC-UAC9_o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="container">
+    <iframe id="video" width="601" height="338" src="https://www.youtube.com/embed/OTUC-UAC9_o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
         <div class="container">
-        <div class="page header" id="campus_life">
-            <h2>campus life</h2>
-            <div class="row">
-                <div class="travel_mainDiv">
-                   <img class="img-responsive" src="https://content3.jdmagicbox.com/comp/ahmednagar/w3/9999px241.x241.170804074309.c8w3/catalogue/podar-international-school-kedgaon-ahmednagar-schools-ozqk51p0zi.jpg"> 
-                    <h4 class="text-capitalize"><kbd>assembly ground</kbd></h4>
-                    <hr>
-                    <p class="text-muted text-left"></p>
+            <div class="page header" id="campus_life">
+                <h2 class="text-capitalize">Campus Life</h2>
+                <div class="row">
+                    <div class="travel_mainDiv">
+                        <img class="img-responsive" src="https://content3.jdmagicbox.com/comp/ahmednagar/w3/9999px241.x241.170804074309.c8w3/catalogue/podar-international-school-kedgaon-ahmednagar-schools-ozqk51p0zi.jpg">
+                        <h4 class="text-capitalize"><kbd>Assembly Ground</kbd></h4>
+                        <hr>
+                        <p class="text-muted text-left">
+                            Our Assembly Ground is 90 feet long and 80 feet wide. It has a stage at the right corner and a sitting arangement for parents at left with a covered shed. The entrance of our school is starting from the middle of the assembly ground. We can play cricket and basketball there.
+                        </p>
+                    </div>
+                    <div class="travel_mainDiv">
+                        <img class="img-responsive" src="2017-1-3--11-15-57-727_footergalleryahmednagar03012017_2.jpg">
+                        <h4 class="text-capitalize"><kbd>Science Lab</kbd></h4>
+                        <hr>
+                        <p class="text-muted text-left">
+                            Our mam Shital Khedkar is good at science and she teaches us EVS. She uses Scince labroratary to show us experiments. Our Science lab is in front of our library and its 25 feet wide and 30 feet long.
+                        </p>
+                    </div>
+                    <div class="travel_mainDiv">
+                        <img class="img-responsive" src="2017-1-3--11-17-30-211_footergalleryahmednagar03012017_11.jpg">
+                        <h4 class="text-capitalize"><kbd>Library</kbd></h4>
+                        <hr>
+                        <p class="text-muted text-left">
+                            This is our library that has book shelfs at right and left, Our mam Shubhangi Yadav narates beautiful stories to us about some personalities, moral, fantasy and many more. Our library is 120 feet long and 100 feet wide.
+                        </p>
+                    </div>
                 </div>
             </div>
+            <div class="page-header" id="achivements">
+                <h2 class="text-capitalize">school achivements</h2>
+            </div>
+            
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achivement1">
+            Interschool Quiz Competition<i class="fa fa-sort"></i>
         </div>
-            <div class="page-header" id="movies">
+        <div id="school_achivement1" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achivementsID">
+                <img src="unnamed%20(1).jpg" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_head">
+                <h5 class="text-success text-left text-capitalize">Won 2nd prize in interschool quiz competition</h5>
+                <p>Our school won Second in Inter School Quiz Competition held in Mumbai on the occasion of  Gandhi Jayanti.</p>
+            </div>
+            <div class="bg-primary moviehead" data-toggle="collapse" data-target="#school_achivement2">Interschool Singing Competition<i class="fa fa-sort"></i></div>
+                        <div id="school_achivement2" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achivementsID">
+                            <img src="unnamed.jpg" class="img-responsive img-thumbnail">
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 moviehead">
+                <h5 class="text-success text-left text-capitalize">Won in interschool Singing competition</h5>
+                <p>Our school won Inter School Singing Competition held in Pune on the occasion of Independence Day.</p>
+            </div>
+                            </div>
+            </div>
+                
+            <div class="page-header" id="whatsnew">
             <h2 class="text-capitalize">What's New</h2>
         </div>
         <ul class="list-group">
@@ -63,14 +121,14 @@
 3) Students have the option of writing the essay questions in the notebook and scan/picture of the page and upload online.
 4) Works best with Laptop/Desktop</p>
             </li>
-    <div>
+    <div class="container" >
         <h2 class="text-capitalize">Contact Us</h2>
     </div>
     <div id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.7037722407085!2d74.70130481490116!3d19.076757587087478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdcb0c4b082f5ef%3A0x16719a4bb0e36d2b!2sPodar%20International%20School%20Ahmednagar!5e0!3m2!1sen!2sin!4v1606394915517!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
 
-    <div id="details">
+    <div id="details" id="contactus">
         <img src="WhatsApp%20Image%202020-11-26%20at%205.41.44%20PM.jpeg">
         <h3>Principal Name: </h3>
         <h4>Mangesh Jagtap</h4>
@@ -86,3 +144,4 @@
 </body>
 
 </html>
+
